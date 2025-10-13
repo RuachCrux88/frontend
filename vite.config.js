@@ -18,6 +18,8 @@ export default defineConfig({
   build: {
     // Asegurar que los assets se resuelvan correctamente
     assetsDir: 'assets',
+    // Optimización para producción
+    minify: 'esbuild',
     rollupOptions: {
       output: {
         manualChunks: {
@@ -26,11 +28,13 @@ export default defineConfig({
       }
     }
   },
-  // Configuración base para producción - usar ruta absoluta
+  // Configuración base para producción - siempre desde raíz
   base: '/',
   // Configuración del servidor de desarrollo
   server: {
-    historyApiFallback: true,
+    historyApiFallback: {
+      index: '/index.html'
+    },
   },
   // Configuración para preview (importante para SPA routing)
   preview: {

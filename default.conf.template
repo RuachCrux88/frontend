@@ -5,9 +5,20 @@ server {
   root /usr/share/nginx/html;
   index index.html;
 
-  # Configuración mejorada para SPA - Vue Router modo history
+    # Configuración específica para Vue Router con history mode
   location / {
+    # Intentar servir el archivo solicitado, luego la carpeta, luego index.html
     try_files $uri $uri/ @fallback;
+  }
+
+  # Fallback para todas las rutas de la SPA
+  location @fallback {
+    rewrite ^.*$ /index.html last;
+  }
+
+  # Manejo específico para prevenir que las rutas de Vue se traten como directorios
+  location ~ ^/(herramientas-evaluacion|modelo-de-madurez|taxonomia)/ {
+    try_files $uri @fallback;
   }
 
   # Fallback para SPA routing
