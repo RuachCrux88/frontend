@@ -1,0 +1,85 @@
+# ==========================================
+# GITATTRIBUTES - AKADATA
+# ==========================================
+
+# Default behavior: normalize line endings to LF in repository,
+# but allow Git to convert them appropriately on checkout
+* text=auto eol=lf
+
+# ==========================================
+# DEPLOYMENT (Docker)
+# ==========================================
+
+# Docker files
+deployment/Dockerfile text eol=lf
+deployment/docker-compose.yml text eol=lf
+deployment/docker-compose.yaml text eol=lf
+deployment/**/*.sh text eol=lf
+
+# ==========================================
+# DOCUMENTATION
+# ==========================================
+
+# Markdown files
+*.md text eol=lf
+**/*.md text eol=lf
+
+# Text files
+*.txt text eol=lf
+**/*.txt text eol=lf
+README* text eol=lf
+CHANGELOG* text eol=lf
+LICENSE* text eol=lf
+
+# ==========================================
+# BINARY FILES
+# ==========================================
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary
+*.webp binary
+
+# Fonts
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
+*.eot binary
+
+# Archives
+*.zip binary
+*.tar binary
+*.tar.gz binary
+*.jar binary
+*.war binary
+*.rar binary
+*.7z binary
+
+# Documents
+*.pdf binary
+*.doc binary
+*.docx binary
+*.xls binary
+*.xlsx binary
+*.ppt binary
+*.pptx binary
+
+# ==========================================
+# SPECIAL CASES
+# ==========================================
+
+# Windows batch files should use CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Shell scripts should use LF
+*.sh text eol=lf
+
+# Prevent Git from normalizing these files
+*.min.js -text
+*.min.css -text
