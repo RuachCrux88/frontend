@@ -91,4 +91,31 @@ const router = createRouter({
   routes
 })
 
+// Guard de navegación para rutas protegidas
+router.beforeEach((to, from, next) => {
+  const token = localStorage.getItem('jwtToken')
+  
+  // Rutas que requieren autenticación
+  const protectedRoutes = [
+    'FormsList',
+    'FormPage',
+    'TaxonomiaFormulario',
+    'Formulario',
+    'FormularioMadurezAdmin',
+    'ModeloDeMadurezFormList',
+    'ModeloDeMadurezFormDomain',
+    'ModeloDeMadurezDashboard',
+    'FormularioMadurez',
+    'UserProfile'
+  ]
+  
+  // Verificar si la ruta requiere autenticación
+  if (protectedRoutes.includes(to.name) && !token) {
+    // Redirigir al home o página de login
+    next({ name: 'home' })
+  } else {
+    next()
+  }
+})
+
 export default router

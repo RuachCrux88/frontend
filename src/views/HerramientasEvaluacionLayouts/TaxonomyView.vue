@@ -34,9 +34,14 @@
       </div>
     </div>
 
-    <div class="button-container">
+    <div class="button-container" v-if="isAuthenticated">
       <button class="cta-button" @click.prevent="onOpenHerramienta">IR A LA HERRAMIENTA</button>
     </div>
+    
+    <div class="button-container" v-else>
+      <p class="login-message">Por favor, <router-link to="/" class="login-link">inicia sesión</router-link> para acceder a la herramienta</p>
+    </div>
+    
     <div class="button-container" v-if="userRole === 'ADMIN'">
       <button class="cta-button" @click.prevent="onOpenFormulario">CONFIGURACION</button>
     </div>
@@ -45,9 +50,15 @@
 
 <script setup>
 import { useRouter } from 'vue-router'
+import { ref, onMounted } from 'vue'
 
 const router = useRouter()
-const userRole = localStorage.getItem('userRole')
+const userRole = ref(localStorage.getItem('userRole'))
+const isAuthenticated = ref(false)
+
+onMounted(() => {
+  isAuthenticated.value = !!localStorage.getItem('jwtToken')
+})
 
 function onOpenHerramienta() {
   router.push({ name: 'FormsList' })
@@ -139,5 +150,21 @@ function onOpenFormulario() {
 .cta-button:hover {
   transform: translateY(-2px);
   box-shadow: 4px 4px 0 #c9a000;
+}
+
+.login-message {
+  color: #56005b;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.login-link {
+  color: #56005b;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.login-link:hover {
+  color: #7a007f;
 }
 </style>
