@@ -10,26 +10,16 @@
           src="@/assets/img/herramientasEvaluacion/objetivosBarreras.png"
           alt="Objetivos y barreras"
         />
-        <h3>Objetivos y barreras</h3>
+        <h3>Oportiunidades y barreras</h3>
         <p>
-          Este formulario es ideal para clasificar y analizar sistemáticamente universidades u organizaciones. Permite una evaluación detallada de sus capacidades y características clave, estandarizando la recolección de información para comparaciones y la toma de decisiones estratégicas.
+          Encuesta para identificar los desafíos y factores habilitadores en la implementación de
+          gobernanza de datos en Instituciones de Educación Superior.
+          <b>
+          ¿Quieres participar?
+          </b>
+          Identifica los factores clave que afectan la gobernanza de datos en tu institución.
         </p>
-      </div>
-
-      <div
-        class="tarjeta"
-        @click="irAOtraVista('maturity-model')"
-      >
-        <img
-          src="@/assets/img/herramientasEvaluacion/maturityModel.png"
-          alt="Modelo de madurez"
-        />
-        <h3>Modelo de madurez</h3>
-        <p>
-          Este modelo es ideal para evaluar el nivel de madurez digital de universidades u organizaciones. Proporciona un marco para comprender su progreso en la transformación digital, identificando las etapas actuales y las acciones necesarias para avanzar hacia un mayor desarrollo y optimización.
-        </p>
-      </div>
-
+      </div> <!--op y barreras--------------------------------------------------->
       <div
         class="tarjeta"
         @click="irAOtraVista('taxonomy')"
@@ -40,9 +30,34 @@
         />
         <h3>Evaluación taxonomía</h3>
         <p>
-          Este análisis es ideal para identificar y comprender los factores externos e internos que influyen en el éxito de universidades u organizaciones. Permite reconocer las oportunidades a aprovechar para el crecimiento y la innovación, así como las barreras a superar para mitigar riesgos y alcanzar objetivos estratégicos.
+          Estructura conceptual jerárquica de dominios, dimensiones y características clave de la
+          gobernanza de datos en universidades.
+          <b>
+            ¿Por dónde empezar?
+          </b>
+          Explora la taxonomía para identificar los elementos críticos de un sistema de gobernanza
+          de datos. Personaliza tu ruta según las necesidades y capacidades institucionales.
         </p>
-      </div>
+      </div> <!--Tax------------------------------------------------------------->
+      <div
+        class="tarjeta"
+        @click="irAOtraVista('maturity-model')"
+      >
+        <img
+          src="@/assets/img/herramientasEvaluacion/maturityModel.png"
+          alt="Modelo de madurez"
+        />
+        <h3>Modelo de madurez</h3>
+        <p>
+          Un marco estructurado para medir el grado de avance institucional en gobernanza de
+          datos y transformación digital, con métricas por dominios estratégicos.
+          <b>
+            ¿En qué etapa estás?
+          </b>
+          Evalúa tu grado de avance institucional en gobernanza de datos y con métricas por
+          dominios estratégicos.
+        </p>
+      </div> <!--MModel---------------------------------------------------------->
     </div>
   </section>
 </template>

@@ -7,12 +7,14 @@
 
       <div class="text">
         <p>
-          Es una herramienta que permite diagnosticar su nivel actual de madurez en la gestión y gobernanza de datos.
-          Evalúa aspectos clave como políticas, procesos, roles, tecnologías, cultura organizacional y toma de decisiones basada en datos.
+          Es una herramienta que permite diagnosticar su nivel actual y esperado en dominios clave de la
+          gobernanza de datos. Evalúa aspectos clave como políticas, procesos, roles, tecnologías, cultura
+          organizacional y toma de decisiones basada en datos.
         </p>
         <p>
           Con base en este análisis, se puede diseñar un plan de acción progresivo que le permita escalar a niveles más altos de madurez,
           fortaleciendo su capacidad de generar valor a partir de los datos.
+          <a href="https://www.youtube.com/watch?v=fXqhVjtn_lk">Ver vídeo Modelo de Madurez</a>
         </p>
       </div>
     </div>

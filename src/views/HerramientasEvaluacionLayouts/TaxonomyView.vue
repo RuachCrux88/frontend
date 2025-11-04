@@ -1,20 +1,26 @@
 <template>
   <div class="taxonomy-view">
-    <h1 class="title">Taxonomía</h1>
+    <h1 class="title">Taxonomía de Gobernanza de Datos</h1>
 
     <div class="content">
       <img src="@/assets/img/herramientasEvaluacion/taxonomy.png" alt="Taxonomía imagen" class="image" />
 
       <div class="text">
         <p>
-          Es una estructura conceptual que permite a las Instituciones clasificar, organizar y entender los elementos clave de la gobernanza de datos, a partir de conceptos, categorías, niveles y relaciones comunes.
+          Es una estructura conceptual que permite a las Instituciones clasificar, organizar y
+          entender los elementos clave de la gobernanza de datos, a partir de conceptos,
+          categorías, niveles y relaciones comunes.
         </p>
         <p>
-          La taxonomía aborda componentes como principios rectores, dominios funcionales, actores responsables, procesos clave, tecnologías habilitadoras y métricas asociadas, proporcionando un marco común para orientar el diseño, evaluación e implementación de políticas de datos.
+          La taxonomía aborda componentes como principios rectores, dominios funcionales,
+          actores y procesos clave proporcionando un marco común para orientar el diseño,
+          evaluación e implementación de programas de gobernanza de datos.
         </p>
         <p>
-          Sirve como referente organizador para facilitar el diálogo institucional, la toma de decisiones y el alineamiento entre diferentes áreas funcionales.
+          Sirve como referente organizador para facilitar el diálogo institucional, la toma de
+          decisiones y el alineamiento entre diferentes áreas funcionales.
         </p>
+        <a href="https://www.youtube.com/watch?v=HfggWRtlYwo"> Ver vídeo de Taxonomía de GoD</a>
       </div>
     </div>
 
@@ -22,15 +28,16 @@
       <div class="info">
         <h2>¿A quién va dirigido?</h2>
         <p>
-          Diseñadores de políticas institucionales, comités de gobernanza, líderes de TIC, docentes investigadores y equipos de datos en instituciones educativas.
+          Diseñadores de políticas institucionales, comités de gobernanza, líderes de tecnología, docentes
+          investigadores y equipos de datos en instituciones educativas.
         </p>
       </div>
 
       <div class="info">
         <h2>¿Qué resultado ofrece?</h2>
         <p>
-          Facilita una comprensión integral y estructurada de los elementos que componen la gobernanza de datos, sirviendo como base para estrategias más coherentes y articuladas.
-        </p>
+          Facilita una comprensión integral y estructurada de los elementos que componen la gobernanza de
+          datos, sirviendo como base para estrategias más coherentes y articuladas.        </p>
       </div>
     </div>
 
@@ -38,7 +45,7 @@
       <div class="button-container">
         <button class="cta-button" @click.prevent="onOpenHerramienta">VER TAXONOMÍAS</button>
       </div>
-      
+
       <div class="button-container" v-if="userRole === 'ADMIN'">
         <button class="cta-button" @click.prevent="onOpenFormulario">CONFIGURACIÓN</button>
       </div>

@@ -1,18 +1,24 @@
 <template>
   <div class="objetivos-view">
-    <h1 class="title">Objetivos y Barreras</h1>
+    <h1 class="title">Oportunidades y Barreras</h1>
 
     <div class="content">
       <img src="@/assets/img/herramientasEvaluacion/objetivosBarreras.png" alt="Reunión" class="image" />
 
       <div class="text">
         <p>
-          La identificación de barreras y oportunidades es clave para diseñar estrategias eficaces de gobernanza de datos en las Instituciones de Educación Superior (IES).
-          Este análisis permite comprender los factores que dificultan o favorecen la implementación de sistemas de gestión de datos eficientes, éticos y sostenibles.
+          La identificación de barreras y oportunidades es clave para diseñar estrategias eficaces
+          de gobernanza de datos en las Instituciones de Educación Superior (IES). Este análisis
+          permite comprender los factores que dificultan o favorecen la implementación de sistemas
+          de gestión de datos eficientes, éticos y sostenibles.
         </p>
         <p>
-          Una vez identificadas estas variables, es posible definir una estrategia adaptada al contexto de la IES, que aproveche las oportunidades disponibles y trace rutas para superar los obstáculos existentes.
+          Una vez identificadas estas variables, es posible definir un plan a corto plazo y sensibilizar
+          a los involucrados para aprovechar las oportunidades disponibles y trace rutas para
+          superar los obstáculos existentes.
         </p>
+        <a href="https://www.youtube.com/watch?v=UPAjKBYp2Vs">Ver video de oportunidades GoD</a>
+        <a href="https://www.youtube.com/watch?v=om1MYQ-9YBQ">Ver video de barreras GoD</a>
       </div>
     </div>
 
@@ -20,7 +26,10 @@
       <div class="info">
         <h2>¿A quién va dirigido?</h2>
         <p>
-          Gestores/as académicos, directivos/as, responsables de calidad, comités de datos y equipos de transformación digital en Instituciones de Educación Superior.
+          Este instrumento es ideal para compartir con profesores y administrativos, gestores/as
+          académicos, directivos/as, responsables de calidad, comités de datos y equipos de
+          transformación digital, lideres TIC en Instituciones de Educación Superior para obtener
+          percepciones institucionales de la gobernanza de datos.
         </p>
       </div>
 
@@ -30,11 +39,10 @@
           Este recurso permite priorizar las oportunidades más viables y clasificar las barreras según su impacto, ayudando a las IES a establecer un plan estratégico de gobernanza de datos contextualizado y accionable.
         </p>
       </div>
-    </div>
-<!--
+
     <div v-if="isAuthenticated">
       <div class="button-container">
-        <button class="cta-button">IR A LA HERRAMIENTA</button>
+        <a href="https://forms.office.com/r/tUAyFGFjvf">IR A LA HERRAMIENTA</a>
       </div>
 
       <div class="button-container" v-if="userRole === 'ADMIN'">
@@ -45,7 +53,6 @@
     <div class="button-container" v-else>
         <p class="login-message">Por favor, <router-link to="/" class="login-link">inicia sesión</router-link> para acceder a la herramienta.</p>
     </div>
--->
   </div>
 </template>
 
